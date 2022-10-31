@@ -15,10 +15,20 @@ export default function Home() {
       <FeaturedBrands />
       <TodaysDeals />
       <HomePosters />
-      <div className="py-5" style={setBackgroundImage('https://demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-content-bg-scaled.jpg', { backgroundPosition: 'bottom center', backgroundColor: '#f3f3f3', backgroundSize: 'cover' })}>
+      <div
+        className="py-5"
+        style={setBackgroundImage(
+          "https://demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-content-bg-scaled.jpg",
+          {
+            backgroundPosition: "bottom center",
+            backgroundColor: "#f3f3f3",
+            backgroundSize: "cover",
+          }
+        )}
+      >
         <EssentialProducts />
         <HealthDaily />
       </div>
     </>
-  )
+  );
 }

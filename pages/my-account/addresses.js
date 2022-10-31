@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import AddressForm from "../../app/components/dashboard/AddressForm";
+import DashboardLayout from "../../app/layout/DashboardLayout";
 
 const Addresses = () => {
   return (
-    <div>Addresses</div>
-  )
-}
+    <DashboardLayout>
+      <AddressForm />
+    </DashboardLayout>
+  );
+};
 
-export default Addresses
+export default Addresses;

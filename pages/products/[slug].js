@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Breadcrumb from "../../app/components/shared/Breadcrumb";
 
 const SingleProduct = () => {
   return (
-    <div>SingleProduct</div>
-  )
-}
+    <div>
+      <Breadcrumb />
+    </div>
+  );
+};
 
-export default SingleProduct
+export default SingleProduct;

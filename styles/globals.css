@@ -16,28 +16,40 @@ body {
   margin: 0;
   padding: 0;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply text-title;
 }
-p{
+
+p {
   @apply text-color;
 }
+
 /* tailwind components */
 @layer components {
+
   /* Wrapper container */
   .container {
     @apply !max-w-screen-2xl mx-auto px-5;
   }
+
   /* Buttons */
-  .btn-white{
+  .btn-white {
     @apply bg-white text-title font-bold px-7 py-3 block w-fit rounded hover:shadow-md transition duration-300 ease-in-out;
   }
+
   /* Section title */
-  .section-title{
+  .section-title {
     @apply md:text-4xl text-2xl font-bold text-center text-title;
   }
+
   /* card Shadow */
-  .card-shadow{
+  .card-shadow {
     box-shadow: 0 30px 40px 0 rgb(131 132 135 / 15%);
     -webkit-box-shadow: 0 30px 40px 0 rgb(131 132 135 / 15%);
   }
@@ -49,13 +61,26 @@ p{
   }
 
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
   }
 
   /* Products */
   /* product card */
-  .product-card{
-    @apply !max-w-[275px] flex flex-col items-start cursor-pointer p-5 rounded hover:card-shadow transition-all duration-500 relative border border-gray-100 hover:border-gray-200;
+  .product-card {
+    @apply !w-[275px] flex flex-col items-start cursor-pointer p-5 rounded hover:card-shadow transition-all duration-500 relative border border-gray-100 hover:border-gray-200;
+  }
+}
+
+/* Mantain Tab */
+.mantine-Tabs-tab {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .table_row {
+    display: none;
   }
 }

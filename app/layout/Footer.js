@@ -53,11 +53,11 @@ const Footer = () => {
               </span>
               <span className="flex !mt-5">
                 <AiOutlineHome className="text-color mt-[5px]" />
-                <address className="ml-4 text-color not-italic">Badda, Dhaka 1212, Bangladesh</address>
+                <address className="ml-4 text-color not-italic">Al Nahda 2, Dubai</address>
               </span>
               <span className="flex">
                 <AiOutlineMail className="text-color mt-[5px]" />
-                <p className="ml-4">khalideofficial@gmail.com</p>
+                <p className="ml-4">mahfujulhuq07@gmail.com</p>
               </span>
             </div>
           </div>
@@ -116,7 +116,7 @@ const Footer = () => {
           {/* Newsletter */}
           <div className="lg:max-w-sm">
             <h2 className="text-lg mb-6 font-bold">Farmart Newsletter</h2>
-            <p>Register now to get updates on promotions and coupns. Don't worry! We not spam</p>
+            <p>Register now to get updates on promotions and coupns. Don't worry! We Dont spam</p>
             <div className="flex items-center mt-5">
               <div className="flex flex-1 items-center border p-4 rounded">
                 <AiOutlineMail className="text-title mt-[5px]" />
@@ -135,7 +135,7 @@ const Footer = () => {
         </div>
         {/* Copyright */}
         <div className="py-8 flex flex-wrap space-y-3 justify-center md:justify-between items-center border-t ">
-          <p className="text-sm">© {new Date().getFullYear()} <a href="https://khaliddev.com" className="underline" target="_blank" rel="noreferrer">khalid Saifullah</a>. No Rights Reserved 🙂. Build for fun.</p>
+          <p className="text-sm">© {new Date().getFullYear()} <a href="https://mahfujulhuq.me" className="underline" target="_blank" rel="noreferrer">Mahfuz</a>. No Rights Reserved 🙂. Build for fun.</p>
           <img src="/images/footer-new-payment.png" alt="" />
         </div>
       </div>

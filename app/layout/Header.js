@@ -1,9 +1,16 @@
-import Image from "next/image"
-import Link from "next/link"
-import { AiOutlineUser, AiOutlineShoppingCart } from 'react-icons/ai';
-import Search from '../components/Search';
+import Image from "next/image";
+import Link from "next/link";
+import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
+import { useSelector } from "react-redux";
+import Search from "../components/Search";
+import {
+  selectTotalCartItems,
+  selectTotalPrice,
+} from "../redux/slices/basketSlice";
 
 const Header = () => {
+  const cartItems = useSelector(selectTotalCartItems);
+  const totalPrice = useSelector(selectTotalPrice);
   return (
     <header className="bg-white py-7 border-b">
       <div className="container">
@@ -38,11 +45,13 @@ const Header = () => {
               <a href="/cart" className="flex items-center gap-5">
                 <div className="relative">
                   <AiOutlineShoppingCart className="text-3xl text-title" />
-                  <span className="bg-primary rounded text-center absolute px-2 text-sm -right-3 -top-2 font-semibold">0</span>
+                  <span className="bg-primary rounded text-center absolute px-2 text-sm -right-3 -top-2 font-semibold">
+                    {cartItems || 0}
+                  </span>
                 </div>
                 <div className="hidden lg:block">
                   <span className="text-color text-sm">Your Cart</span>
-                  <p className="text-title font-bold text-lg">$0.00</p>
+                  <p className="text-title font-bold text-lg">${totalPrice}</p>
                 </div>
               </a>
             </Link>
@@ -50,7 +59,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

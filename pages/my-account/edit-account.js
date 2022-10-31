@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import UserProfile from "../../app/components/dashboard/UserProfile";
+import DashboardLayout from "../../app/layout/DashboardLayout";
 
 const EditAccount = () => {
   return (
-    <div>EditAccount</div>
-  )
-}
+    <DashboardLayout>
+      <UserProfile />
+    </DashboardLayout>
+  );
+};
 
-export default EditAccount
+export default EditAccount;
